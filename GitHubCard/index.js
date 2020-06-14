@@ -21,7 +21,7 @@
 
 
 
-axios.get('https://api.github.com/users/max821023')
+axios.get('https://api.github.com/users/ShirleyLe3')
     .then((res) => {
             console.log(res.data);   //runs if successful
             //     cards.appendChild(mycard(res.data))
@@ -151,10 +151,10 @@ function githubCard(obj) {
     // });
     return Card;
   }
-  // const cards = document.querySelector('.card');
-  // data.forEach((obj) => {
-  //   cards.appendChild(githubCard(obj));
-  // });
+  const cards = document.querySelector('.card');
+  data.forEach((obj) => {
+    cards.appendChild(githubCard(obj));
+  });
 
   
 
